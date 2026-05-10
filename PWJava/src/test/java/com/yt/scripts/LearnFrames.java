@@ -38,6 +38,10 @@ public class LearnFrames {
 		firstFrame.getByPlaceholder("Enter name").type("Koushik");
 		FrameLocator nestedFrame = firstFrame.frameLocator("iframe.has-background-white");
 		nestedFrame.getByPlaceholder("Enter email").type("koushik@mail.com");
+		firstFrame.getByPlaceholder("Enter name").fill("Koushik CHatterjee");
+		
+		Frame frame = page.frame("");
+		frame.locator("").fill("");
 		//playwright.close();
 	}
 }
